@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install
+RUN npm install --ignore-scripts
 
 CMD npm run docker:start
