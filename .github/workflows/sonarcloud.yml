@@ -18,6 +18,6 @@ jobs:
       - name: Test and coverage
         run: npm test
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v8
+        uses: SonarSource/sonarqube-scan-action@b116fb45f78819bd9484b2591be2ea124e94119d
         env:
           SONAR_TOKEN: ${{ secrets. SONAR_TOKEN }}
